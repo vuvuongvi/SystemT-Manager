@@ -1,0 +1,30 @@
+{
+  "name": "systemt-manager",
+  "version": "1.0.0",
+  "description": "This is SystemT API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "build-watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuvuongvi/SystemT-Manager.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vuvuongvi/SystemT-Manager/issues"
+  },
+  "homepage": "https://github.com/vuvuongvi/SystemT-Manager#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.8"
+  }
+}
