@@ -1,11 +1,15 @@
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import { AuthenticationError } from 'apollo-server';
+import userModels from '../../db/user-schema';
 export default {
   Query: {
     user: async (parent, {id}, {models: {userModel}, me}, info) => {
       if(!me) throw new AuthenticationError('You are not authenticated');
-      const user = await userModel.findById({ _id: id }).exec();
+      const user = await userModels.findOne({_id: id}).exec()
+        .then((data) => {
+          console.log(data);
+        })
       return user;
     },
     login: async (parent, {name, password}, {models: {userModel}}, info) => {
