@@ -34,6 +34,7 @@
     "@types/jsonwebtoken": "^8.3.5",
     "@types/mongoose": "^5.5.36",
     "@types/node-fetch": "^2.5.4",
+    "@types/shelljs": "^0.8.6",
     "apollo-server": "^2.9.15",
     "apollo-server-express": "^2.5.0-rc.0",
     "bcrypt": "^3.0.7",
